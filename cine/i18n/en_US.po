@@ -1,0 +1,384 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* cine
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20190206\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-28 10:03+0000\n"
+"PO-Revision-Date: 2019-02-28 10:03+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_apellidos
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_apellidos
+msgid "Apellidos"
+msgstr "Surname"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_venta_cantidad
+msgid "Cantidad de entradas"
+msgstr "Number of tickets"
+
+#. module: cine
+#: model:ir.ui.menu,name:cine.menu_root
+msgid "Cine"
+msgstr "Cinema"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_venta_cli
+msgid "Cliente"
+msgstr "Customer"
+
+#. module: cine
+#: model:ir.actions.act_window,name:cine.cliente_action_window
+#: model:ir.ui.menu,name:cine.menu_2
+msgid "Clientes"
+msgstr "Customers"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_create_uid
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora_create_uid
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_create_uid
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_create_uid
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_create_uid
+#: model:ir.model.fields,field_description:cine.field_cine_tarifa_create_uid
+#: model:ir.model.fields,field_description:cine.field_cine_venta_create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_create_date
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora_create_date
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_create_date
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_create_date
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_create_date
+#: model:ir.model.fields,field_description:cine.field_cine_tarifa_create_date
+#: model:ir.model.fields,field_description:cine.field_cine_venta_create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_cod_postal
+msgid "Código postal"
+msgstr "Postal code"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_name
+msgid "DNI"
+msgstr "ID card"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_display_name
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora_display_name
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_display_name
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_display_name
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_display_name
+#: model:ir.model.fields,field_description:cine.field_cine_tarifa_display_name
+#: model:ir.model.fields,field_description:cine.field_cine_venta_display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_distribuidora
+msgid "Distribuidora"
+msgstr "Distributor"
+
+#. module: cine
+#: model:ir.actions.act_window,name:cine.distribuidora_action_window
+#: model:ir.ui.menu,name:cine.menu_4
+msgid "Distribuidoras"
+msgstr "Distributors"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_duracion
+msgid "Duración en minutos"
+msgstr "Movie length (minutes)"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_venta_emp
+msgid "Empleado que realiza la venta"
+msgstr "Employee"
+
+#. module: cine
+#: model:ir.actions.act_window,name:cine.empleado_action_window
+#: model:ir.ui.menu,name:cine.menu_1
+msgid "Empleados"
+msgstr "Employees"
+
+#. module: cine
+#: sql_constraint:cine.distribuidora:0
+msgid "Esa distribuidora ya existe."
+msgstr "This distributor already exists."
+
+#. module: cine
+#: sql_constraint:cine.pelicula:0
+msgid "Esa película ya existe."
+msgstr "This movie already exists."
+
+#. module: cine
+#: sql_constraint:cine.sesion:0
+msgid "Esa sesión ya existe."
+msgstr "This session already exists."
+
+#. module: cine
+#: sql_constraint:cine.venta:0
+msgid "Esa venta ya existe."
+msgstr "This sale already exists."
+
+#. module: cine
+#: sql_constraint:cine.cliente:0
+msgid "Ese cliente ya existe."
+msgstr "This customer already exists."
+
+#. module: cine
+#: sql_constraint:cine.empleado:0
+msgid "Ese empleado ya existe."
+msgstr "This employee already exists."
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_fecha_estreno
+msgid "Fecha de estreno"
+msgstr "Release date"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_fecha
+msgid "Fecha y hora de la sesión"
+msgstr "Session time"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_horas
+msgid "Horas de trabajo semanales"
+msgstr "Weekly hours"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_id
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora_id
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_id
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_id
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_name
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_id
+#: model:ir.model.fields,field_description:cine.field_cine_tarifa_id
+#: model:ir.model.fields,field_description:cine.field_cine_venta_id
+msgid "ID"
+msgstr "ID"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora_name
+msgid "Identificador"
+msgstr "Identifier"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_imagen
+msgid "Imagen"
+msgstr "Image"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_tarifa_importe
+#: model:ir.model.fields,field_description:cine.field_cine_venta_importe
+msgid "Importe"
+msgstr "Cost"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente___last_update
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora___last_update
+#: model:ir.model.fields,field_description:cine.field_cine_empleado___last_update
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula___last_update
+#: model:ir.model.fields,field_description:cine.field_cine_sesion___last_update
+#: model:ir.model.fields,field_description:cine.field_cine_tarifa___last_update
+#: model:ir.model.fields,field_description:cine.field_cine_venta___last_update
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_write_uid
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora_write_uid
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_write_uid
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_write_uid
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_write_uid
+#: model:ir.model.fields,field_description:cine.field_cine_tarifa_write_uid
+#: model:ir.model.fields,field_description:cine.field_cine_venta_write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_write_date
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora_write_date
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_write_date
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_write_date
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_write_date
+#: model:ir.model.fields,field_description:cine.field_cine_tarifa_write_date
+#: model:ir.model.fields,field_description:cine.field_cine_venta_write_date
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: cine
+#: model:ir.ui.menu,name:cine.menu_2_list
+msgid "Listado de clientes"
+msgstr "Listado de clientes"
+
+#. module: cine
+#: model:ir.ui.menu,name:cine.menu_4_list
+msgid "Listado de distribuidoras"
+msgstr "Listado de distribuidoras"
+
+#. module: cine
+#: model:ir.ui.menu,name:cine.menu_1_list
+msgid "Listado de empleados"
+msgstr "Listado de empleados"
+
+#. module: cine
+#: model:ir.ui.menu,name:cine.menu_3_list
+msgid "Listado de películas"
+msgstr "Listado de películas"
+
+#. module: cine
+#: model:ir.ui.menu,name:cine.menu_5_list
+msgid "Listado de sesiones"
+msgstr "Listado de sesiones"
+
+#. module: cine
+#: model:ir.ui.menu,name:cine.menu_6_list
+msgid "Listado de tarifas"
+msgstr "Listado de tarifas"
+
+#. module: cine
+#: model:ir.ui.menu,name:cine.menu_7_list
+msgid "Listado de ventas"
+msgstr "Listado de ventas"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_nombre
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora_nombre
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_nombre
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_nombre
+msgid "Nombre"
+msgstr "Name"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_name
+msgid "Número de sesión"
+msgstr "Session ID"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_telefono
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_telefono
+msgid "Número de teléfono"
+msgstr "Phone number"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_venta_name
+msgid "Número de venta"
+msgstr "Sale number"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_cliente_name
+msgid "Número del cliente"
+msgstr "Customer ID"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_peli
+msgid "Película"
+msgstr "Movie"
+
+#. module: cine
+#: model:ir.actions.act_window,name:cine.pelicula_action_window
+#: model:ir.model.fields,field_description:cine.field_cine_distribuidora_pelicula
+#: model:ir.ui.menu,name:cine.menu_3
+msgid "Películas"
+msgstr "Movies"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_puesto
+msgid "Puesto de trabajo"
+msgstr "Job"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_sesion_sala
+msgid "Sala de proyección"
+msgstr "Screening hall"
+
+#. module: cine
+#: model:ir.actions.act_window,name:cine.sesion_action_window
+#: model:ir.ui.menu,name:cine.menu_5
+msgid "Sesiones"
+msgstr "Sessions"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_venta_ses
+msgid "Sesión"
+msgstr "Session"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_pelicula_sinopsis
+msgid "Sinopsis"
+msgstr "Synopsis"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_empleado_sueldo
+msgid "Sueldo base"
+msgstr "Base salary"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_venta_entrada
+msgid "Tarifa aplicada"
+msgstr "Rate"
+
+#. module: cine
+#: model:ir.actions.act_window,name:cine.tarifa_action_window
+#: model:ir.ui.menu,name:cine.menu_6
+msgid "Tarifas"
+msgstr "Rates"
+
+#. module: cine
+#: model:ir.model.fields,field_description:cine.field_cine_tarifa_name
+msgid "Tipo de tarifa"
+msgstr "Rate type"
+
+#. module: cine
+#: model:ir.actions.act_window,name:cine.venta_action_window
+#: model:ir.ui.menu,name:cine.menu_7
+msgid "Ventas"
+msgstr "Sales"
+
+#. module: cine
+#: model:ir.model,name:cine.model_cine_cliente
+msgid "cine.cliente"
+msgstr "cine.customer"
+
+#. module: cine
+#: model:ir.model,name:cine.model_cine_distribuidora
+msgid "cine.distribuidora"
+msgstr "cine.distributor"
+
+#. module: cine
+#: model:ir.model,name:cine.model_cine_empleado
+msgid "cine.empleado"
+msgstr "cine.employee"
+
+#. module: cine
+#: model:ir.model,name:cine.model_cine_pelicula
+msgid "cine.pelicula"
+msgstr "cine.movie"
+
+#. module: cine
+#: model:ir.model,name:cine.model_cine_sesion
+msgid "cine.sesion"
+msgstr "cine.session"
+
+#. module: cine
+#: model:ir.model,name:cine.model_cine_tarifa
+msgid "cine.tarifa"
+msgstr "cine.rate"
+
+#. module: cine
+#: model:ir.model,name:cine.model_cine_venta
+msgid "cine.venta"
+msgstr "cine.sale"
+

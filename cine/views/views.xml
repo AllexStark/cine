@@ -1,0 +1,181 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="cine.empleado">
+      <field name="name">Listado de empleados</field>
+      <field name="model">cine.empleado</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="nombre"/>
+          <field name="apellidos"/>
+          <field name="telefono"/>
+          <field name="puesto"/>
+          <field name="horas"/>
+          <field name="sueldo"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="cine.cliente">
+      <field name="name">Listado de clientes</field>
+      <field name="model">cine.cliente</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="nombre"/>
+          <field name="apellidos"/>
+          <field name="telefono"/>
+          <field name="cod_postal"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="cine.pelicula">
+      <field name="name">Listado de películas</field>
+      <field name="model">cine.pelicula</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="imagen" widget="image" height="100px" width="80px"/>
+          <field name="nombre"/>
+          <field name="sinopsis"/>
+          <field name="duracion"/>
+          <field name="fecha_estreno"/>
+          <!--
+          <field name="distr"/>
+        -->
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="cine.distribuidora">
+      <field name="name">Listado de distribuidoras</field>
+      <field name="model">cine.distribuidora</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="nombre"/>
+          <!--
+          <field name="pelis"/>
+        -->
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="cine.sesion">
+      <field name="name">Listado de sesiones</field>
+      <field name="model">cine.sesion</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="peli"/>
+          <field name="sala"/>
+          <field name="fecha"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="cine.tarifa">
+      <field name="name">Listado de tarifas</field>
+      <field name="model">cine.tarifa</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="importe"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="cine.venta">
+      <field name="name">Listado de venta</field>
+      <field name="model">cine.venta</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="ses"/>
+          <field name="entrada"/>
+          <field name="cantidad"/>
+          <field name="emp"/>
+          <field name="cli"/>
+          <field name="importe"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="cine.empleado_action_window">
+      <field name="name">Empleados</field>
+      <field name="res_model">cine.empleado</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="cine.cliente_action_window">
+      <field name="name">Clientes</field>
+      <field name="res_model">cine.cliente</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="cine.pelicula_action_window">
+      <field name="name">Películas</field>
+      <field name="res_model">cine.pelicula</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="cine.distribuidora_action_window">
+      <field name="name">Distribuidoras</field>
+      <field name="res_model">cine.distribuidora</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="cine.sesion_action_window">
+      <field name="name">Sesiones</field>
+      <field name="res_model">cine.sesion</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="cine.tarifa_action_window">
+      <field name="name">Tarifas</field>
+      <field name="res_model">cine.tarifa</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="cine.venta_action_window">
+      <field name="name">Ventas</field>
+      <field name="res_model">cine.venta</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+
+    <!-- Top menu item -->
+    <menuitem name="Cine" id="cine.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Empleados" id="cine.menu_1" parent="cine.menu_root"/>
+    <menuitem name="Clientes" id="cine.menu_2" parent="cine.menu_root"/>
+    <menuitem name="Películas" id="cine.menu_3" parent="cine.menu_root"/>
+    <menuitem name="Distribuidoras" id="cine.menu_4" parent="cine.menu_root"/>
+    <menuitem name="Sesiones" id="cine.menu_5" parent="cine.menu_root"/>
+    <menuitem name="Tarifas" id="cine.menu_6" parent="cine.menu_root"/>
+    <menuitem name="Ventas" id="cine.menu_7" parent="cine.menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="Listado de empleados" id="cine.menu_1_list" parent="cine.menu_1"
+              action="cine.empleado_action_window"/>
+    <menuitem name="Listado de clientes" id="cine.menu_2_list" parent="cine.menu_2"
+              action="cine.cliente_action_window"/>
+    <menuitem name="Listado de películas" id="cine.menu_3_list" parent="cine.menu_3"
+              action="cine.pelicula_action_window"/>
+    <menuitem name="Listado de distribuidoras" id="cine.menu_4_list" parent="cine.menu_4"
+              action="cine.distribuidora_action_window"/>
+    <menuitem name="Listado de sesiones" id="cine.menu_5_list" parent="cine.menu_5"
+              action="cine.sesion_action_window"/>
+    <menuitem name="Listado de tarifas" id="cine.menu_6_list" parent="cine.menu_6"
+              action="cine.tarifa_action_window"/>
+
+    <menuitem name="Listado de ventas" id="cine.menu_7_list" parent="cine.menu_7"
+              action="cine.venta_action_window"/>
+
+  </data>
+</odoo>
